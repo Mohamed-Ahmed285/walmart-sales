@@ -1,0 +1,53 @@
+{
+    "label_Encodings": {
+        "Discount_Category": {
+            "No Discount": 0,
+            "Low Discount": 1,
+            "Medium Discount": 2,
+            "High Discount": 3
+        },
+        "Ship Mode": {
+            "Standard Class": 0,
+            "Second Class": 1,
+            "First Class": 2,
+            "Same Day": 3
+        },
+        "Sub-Category": {
+            "Fasteners": 0,
+            "Labels": 1,
+            "Art": 2,
+            "Binders": 3,
+            "Paper": 4,
+            "Envelopes": 5,
+            "Supplies": 6,
+            "Furnishings": 7,
+            "Appliances": 8,
+            "Accessories": 9,
+            "Storage": 10,
+            "Phones": 11,
+            "Bookcases": 12,
+            "Chairs": 13,
+            "Tables": 14,
+            "Machines": 15,
+            "Copiers": 16
+        }
+    },
+    "Preprocessing_Metadata": {
+        "One_Hot_Encoded_Columns": [
+            "Segment",
+            "Region",
+            "Category"
+        ],
+        "Scaled_Columns": [
+            "Quantity"
+        ],
+        "Dropped_Columns": [
+            "City",
+            "State",
+            "Profit",
+            "Sales_Original",
+            "Discount"
+        ],
+        "Notes": "One-Hot Encoded columns were processed with drop_first=True to avoid the dummy variable trap."
+    }
+}
